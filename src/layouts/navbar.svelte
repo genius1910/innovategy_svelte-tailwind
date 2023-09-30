@@ -51,7 +51,6 @@
 			key: 'support'
 		}
 	];
-	console.log($page.url.pathname);
 </script>
 
 <div class="w-64 h-full flex flex-col pt-8 px-4">
@@ -65,7 +64,7 @@
 				$page.url.pathname.includes(menu.key) ? 'bg-[#F6F6F6]' : ''
 			}`}
 		>
-			<img src={'/src/lib/images/' + menu.img + '.svg'} alt="SvelteKit" />
+			<img src={'/images/' + menu.img + '.svg'} alt="SvelteKit" />
 			<p class="p-2">{menu.title}</p>
 		</div>
 	{/each}
